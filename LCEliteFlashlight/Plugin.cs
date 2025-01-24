@@ -12,6 +12,10 @@ using UnityEngine;
 using LethalLib.Modules;
 using LethalLib;
 
+//to do:
+//  make work with flashlight slot
+//  add config for price
+
 namespace LCEliteFlashlight
 {
     [BepInPlugin(modGUID,modName, modVersion)]
@@ -30,7 +34,9 @@ namespace LCEliteFlashlight
 
         AssetBundle EliteFlashlightAsset;
 
+#pragma warning disable IDE0051 // Remove unused private members
         void Awake()
+#pragma warning restore IDE0051 // Remove unused private members
         {
             if (Instance == null)
             {
