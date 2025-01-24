@@ -18,6 +18,7 @@ using LethalLib;
 
 namespace LCEliteFlashlight
 {
+    [BepInDependency("FlipMods.ReservedItemSlotCore", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInPlugin(modGUID,modName, modVersion)]
     [BepInDependency(LethalLib.Plugin.ModGUID)]
     public class EliteFlashlightBase : BaseUnityPlugin
@@ -68,7 +69,14 @@ namespace LCEliteFlashlight
             TerminalNode eliteTerminalNode = EliteFlashlightAsset.LoadAsset<TerminalNode>("assets/iTerminalNode.asset");
             Items.RegisterShopItem(Missile_EliteFlashlight, null, null, eliteTerminalNode, elitePrice);
 
-            mls.LogInfo("Elite Flashlight has loaded");
+            if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("FlipMods.ReservedFlashlightSlot"))
+            {
+                ReservedItemSlotsCompat.AddItemsToReservedItemSlots();
+                mls.LogInfo("Elite Flashlight and Flashlight slot compat loaded");
+            }
+            
+
+            mls.LogInfo("Elite Flashlight has fully loaded");
             harmony.PatchAll();
         }
     }
