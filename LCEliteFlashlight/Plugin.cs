@@ -21,7 +21,7 @@ namespace LCEliteFlashlight
     {
         private const string modGUID = "Missile.LCEliteFlashlight";
         private const string modName = "LCEliteFlashlight";
-        private const string modVersion = "1.0.0.0";
+        private const string modVersion = "1.0.0";
 
         private readonly Harmony harmony = new Harmony(modGUID);
 
