@@ -12,10 +12,6 @@ using UnityEngine;
 using LethalLib.Modules;
 using LethalLib;
 
-//to do:
-//  make work with flashlight slot
-//  add config for price
-
 namespace LCEliteFlashlight
 {
     [BepInDependency("FlipMods.ReservedItemSlotCore", BepInDependency.DependencyFlags.SoftDependency)]
@@ -41,17 +37,16 @@ namespace LCEliteFlashlight
         void Awake()
         #pragma warning restore IDE0051 // Remove unused private members
         {
+            mls = BepInEx.Logging.Logger.CreateLogSource(modGUID);
             if (Instance == null)
             {
                 Instance = this;
             }
-
             BoundConfig = new EliteFlashlightConfig(base.Config);
 
-            mls = BepInEx.Logging.Logger.CreateLogSource(modGUID);
-
+            
             string sAssemblyLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-
+            
             EliteFlashlightAsset = AssetBundle.LoadFromFile(Path.Combine(sAssemblyLocation, "eliteflashlightbundle"));
             if (EliteFlashlightAsset == null )
             {
@@ -74,6 +69,7 @@ namespace LCEliteFlashlight
             if(BoundConfig.EliteFlashlightPrice.Value > 0) { 
                 elitePrice = BoundConfig.EliteFlashlightPrice.Value;
             }
+            mls.LogInfo("Elite Flashlight set to " + elitePrice + " credits");
 
             TerminalNode eliteTerminalNode = EliteFlashlightAsset.LoadAsset<TerminalNode>("assets/iTerminalNode.asset");
             Items.RegisterShopItem(Missile_EliteFlashlight, null, null, eliteTerminalNode, elitePrice);

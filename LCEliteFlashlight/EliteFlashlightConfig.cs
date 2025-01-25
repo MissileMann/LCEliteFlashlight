@@ -1,6 +1,7 @@
 ﻿using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
+using LethalLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +14,9 @@ namespace LCEliteFlashlight
     class EliteFlashlightConfig
     {
         public readonly ConfigEntry<int> EliteFlashlightPrice;
-        internal ManualLogSource mls;
 
         public EliteFlashlightConfig(ConfigFile cfg)
         {
-            mls.LogInfo("Elite Flashlight config generating");
             cfg.SaveOnConfigSet = false;
 
             EliteFlashlightPrice = cfg.Bind("Elite-flashlight Price", "Elite-flashlight Price", 50, "What value you want the Elite-flashlight to cost in the shop.");
