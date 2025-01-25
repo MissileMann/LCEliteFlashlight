@@ -1,13 +1,7 @@
 ﻿using BepInEx.Configuration;
-using BepInEx.Logging;
 using HarmonyLib;
-using LethalLib;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LCEliteFlashlight
 {
@@ -19,7 +13,7 @@ namespace LCEliteFlashlight
         {
             cfg.SaveOnConfigSet = false;
 
-            EliteFlashlightPrice = cfg.Bind("Elite-flashlight Price", "Elite-flashlight Price", 50, "What value you want the Elite-flashlight to cost in the shop.");
+            EliteFlashlightPrice = cfg.Bind("General", "Elite-flashlight Price", 50, "What value you want the Elite-flashlight to cost in the shop.");
 
             // Get rid of old settings from the config file that are not used anymore
             ClearOrphanedEntries(cfg);

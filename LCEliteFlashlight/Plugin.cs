@@ -1,13 +1,8 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using LethalLib.Modules;
 using LethalLib;
@@ -16,7 +11,7 @@ namespace LCEliteFlashlight
 {
     [BepInDependency("FlipMods.ReservedItemSlotCore", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInPlugin(modGUID,modName, modVersion)]
-    [BepInDependency(LethalLib.Plugin.ModGUID)]
+    [BepInDependency(Plugin.ModGUID)]
     public class EliteFlashlightBase : BaseUnityPlugin
     {
         private const string modGUID = "Missile.LCEliteFlashlight";
