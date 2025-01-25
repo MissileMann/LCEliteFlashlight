@@ -35,14 +35,18 @@ namespace LCEliteFlashlight
 
         AssetBundle EliteFlashlightAsset;
 
-#pragma warning disable IDE0051 // Remove unused private members
+        internal static EliteFlashlightConfig BoundConfig { get; private set; } = null!;
+
+        #pragma warning disable IDE0051 // Remove unused private members
         void Awake()
-#pragma warning restore IDE0051 // Remove unused private members
+        #pragma warning restore IDE0051 // Remove unused private members
         {
             if (Instance == null)
             {
                 Instance = this;
             }
+
+            BoundConfig = new EliteFlashlightConfig(base.Config);
 
             mls = BepInEx.Logging.Logger.CreateLogSource(modGUID);
 
@@ -66,6 +70,11 @@ namespace LCEliteFlashlight
             Items.RegisterItem(Missile_EliteFlashlight);
 
             int elitePrice = 50;
+
+            if(BoundConfig.EliteFlashlightPrice.Value > 0) { 
+                elitePrice = BoundConfig.EliteFlashlightPrice.Value;
+            }
+
             TerminalNode eliteTerminalNode = EliteFlashlightAsset.LoadAsset<TerminalNode>("assets/iTerminalNode.asset");
             Items.RegisterShopItem(Missile_EliteFlashlight, null, null, eliteTerminalNode, elitePrice);
 
