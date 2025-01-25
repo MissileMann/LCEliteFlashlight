@@ -44,3 +44,7 @@ The price of the Elite-flashlight is configurable in the config file. By default
 [RuntimeIcons by LethalCompanyModding](https://thunderstore.io/c/lethal-company/p/LethalCompanyModding/RuntimeIcons/) which is how I generated the icon for the flashlight!
 
 
+
+If you want to see more of my stuff, checkout my [NexusMods page](https://next.nexusmods.com/profile/MissileMann/mods)!
+
+
