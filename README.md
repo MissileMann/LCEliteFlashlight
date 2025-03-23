@@ -2,7 +2,7 @@
 
 This mod adds a third tier of flashlight, the Elite-flashlight! Only the best of the best use this new flashlight! Make sure your crew doesn't get jealous of you...
 
-The Elite-flashlight has a longer and wider light compared to the Pro-flashlight, and has an 8 minute battery life, compared to the Pro's 5 minutes. The flashlight costs 50 credits (can be configured) in the store.
+The Elite-flashlight has a longer and wider light compared to the Pro-flashlight, weighs 6 lbs, and has an 8 minute battery life, compared to the Pro's 5 minutes. The flashlight costs 50 credits (can be configured) in the store.
 
 Works out of the box with [Flashlight slot](https://thunderstore.io/c/lethal-company/p/FlipMods/ReservedFlashlightSlot/)!
 
