@@ -1,5 +1,8 @@
 # Lethal Company Elite-flashlight
 
+Soft Requirement: Light Utility
+Lets the body light when you stop holding the elite flashlight be consistent with it's light when held.
+
 This mod adds a third tier of flashlight, the Elite-flashlight! Only the best of the best use this new flashlight! Make sure your crew doesn't get jealous of you...
 
 The Elite-flashlight has a longer and wider light compared to the Pro-flashlight, weighs 6 lbs, and has an 8 minute battery life, compared to the Pro's 5 minutes. The flashlight costs 50 credits (can be configured) in the store.
@@ -10,7 +13,24 @@ Works out of the box with [Flashlight slot](https://thunderstore.io/c/lethal-com
 Here's some comparisons between the Pro's and the Elite-flashlight's lights.
 <details>
   <summary>Comparison</summary>
+  
+  ![20250323142339_1](https://github.com/user-attachments/assets/44fa8ee1-4a6a-4fa2-9bd7-1a5ba5380fd1)
 
+  ![20250323142345_1](https://github.com/user-attachments/assets/79c965be-d7c2-46f7-bbf9-b52027823a8c)
+
+  ![20250323142409_1](https://github.com/user-attachments/assets/56122ca3-4446-46e0-945c-e1cf7ccc1ff0)
+
+  ![20250323142415_1](https://github.com/user-attachments/assets/c88c4277-79bd-4bfe-8f3a-61bbea402b13)
+
+  ![20250323142436_1](https://github.com/user-attachments/assets/6f37d73a-b687-44bf-90cb-b05130fc590a)
+
+  ![20250323142448_1](https://github.com/user-attachments/assets/c4ea5326-6ddf-49d0-b92f-1b342db45d52)
+
+  ![20250323142523_1](https://github.com/user-attachments/assets/ab5a23e1-7adf-4bff-a534-a7b59ee6f29f)
+
+  ![20250323142526_1](https://github.com/user-attachments/assets/b625f7e4-6648-42fe-8c4f-74bd39739583)
+
+  Old Pictures:
   ![20250124215308_1](https://github.com/user-attachments/assets/a480ce0a-0e7e-47f2-8803-340f2422235b)
 
   ![20250124215315_1](https://github.com/user-attachments/assets/bca352ec-37f1-44b1-a802-9a6894d2ac47)
