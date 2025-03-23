@@ -1,0 +1,10 @@
+{
+	"name": "EliteFlashlight",
+	"version_number": "1.1.0",
+	"website_url": "https://github.com/MissileMann/LCEliteFlashlight",
+	"description": "Adds a new tier of flashlight that has a wider and longer light than the pro's and has a longer battery life.",
+	"dependencies": [
+        "BepInEx-BepInExPack-5.4.2100",
+        "Evaisa-LethalLib-0.16.4"
+    ]
+}
