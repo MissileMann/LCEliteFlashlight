@@ -21,6 +21,9 @@
     <Reference Include="ReservedItemSlotCore">
       <HintPath>..\..\..\..\AppData\Roaming\com.kesomannen.gale\lethal-company\profiles\Elite Flashlight Dev\BepInEx\plugins\FlipMods-ReservedItemSlotCore\ReservedItemSlotCore.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Netcode.Runtime">
+      <HintPath>S:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>S:\SteamLibrary\steamapps\common\Lethal Company\Lethal Company_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
