@@ -1,7 +1,7 @@
 # Lethal Company Elite-flashlight
 
 Soft Requirement: Light Utility
-Lets the body light when you stop holding the elite flashlight be consistent with it's light when held.
+- Lets the body light when you stop holding the elite flashlight be consistent with it's light when held.
 
 This mod adds a third tier of flashlight, the Elite-flashlight! Only the best of the best use this new flashlight! Make sure your crew doesn't get jealous of you...
 
